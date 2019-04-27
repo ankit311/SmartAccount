@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="addDealerPane" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="967.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smartaccount.FXMLMainController">
+   <content>
+      <GridPane fx:id="addDealerPanes" hgap="10.0" vgap="5.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" />
+          <ColumnConstraints fillWidth="false" halignment="LEFT" hgrow="SOMETIMES" />
+            <ColumnConstraints fillWidth="false" hgrow="SOMETIMES" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="64.0" prefWidth="180.0" text="Dealer Form" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Award" size="25.0" />
+               </font>
+            </Label>
+            <Label text="Dealer Id" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arrows1" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Dealer Name" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arrows1" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Owner Name" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arrows1" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Dealer Address" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Arrows1" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Email Id" GridPane.rowIndex="10">
+               <font>
+                  <Font name="Arrows1" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Mobile No." GridPane.rowIndex="11">
+               <font>
+                  <Font name="Arrows1" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dealerIdTxt" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="dealerNameTxt" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="ownerNameTxt" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="6">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="18.0" prefWidth="125.0" text="Flat No.">
+                     <font>
+                        <Font name="Arrows1" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="dealerFlatTxt" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="7">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="dealerPoTxt" GridPane.columnIndex="1" />
+                  <Label text="PO">
+                     <font>
+                        <Font name="Arrows1" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="8">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="State">
+                     <font>
+                        <Font name="Arrows1" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="dealerStateTxt" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="9">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Landmark">
+                     <font>
+                        <Font name="Arrows1" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="dealerLandmarkTxt" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="2" GridPane.rowIndex="7">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="PS">
+                     <font>
+                        <Font name="Arrows1" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="dealerPsTxt" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="2" GridPane.rowIndex="8">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="City">
+                     <font>
+                        <Font name="Arrows1" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="dealerCityTxt" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="2" GridPane.rowIndex="9">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Pincode">
+                     <font>
+                        <Font name="Arrows1" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="dealerPincodeTxt" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <TextField fx:id="dealerEmailTxt" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <TextField fx:id="dealerMobileTxt" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <Button mnemonicParsing="false" onAction="#dealerDetailIntodb" text="SUBMIT" GridPane.columnIndex="1" GridPane.rowIndex="13">
+               <font>
+                  <Font name="Arrows1" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </content>
+</ScrollPane>
